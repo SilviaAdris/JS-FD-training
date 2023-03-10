@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html{
+	overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+	height: 100vh;
+    background-image: url(images/game.jpg);
+    background-size: cover;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button{
+    align-items: center;
+    justify-content: center;
+}
+
+.play{
+	border-radius: 15px;
+	background: #cff359;
+	color: rgb(71, 71, 148);
+	padding: 12px 30px;
+    font-family: Roboto-bold;
+}
+
+.label{
+    font-family: Roboto-regular;
+    color:black;
+    font-size: 18px;
+}
+
+.input{
+    border-radius: 10px;
+    padding: 6px 20px;
+    border-color: 1 px solid black;
+}
+
+.submit{
+    font-family: Roboto-regular;
+    font-size: 15px; 
+    padding: 4px 10px;
+    border-radius: 15px;
+    border-color: white;
+}

@@ -3,10 +3,12 @@ function computerPlay(){
     if( random === 1){
         return "rock";
     }
-    if (random === 2){
+    else if (random === 2){
         return "paper";
     }
-    return "scissors";
+    else{
+        return "scissors"; 
+    }
 }
 
 function playRound(playerSelection, computerSelection){
@@ -18,22 +20,22 @@ function playRound(playerSelection, computerSelection){
     if (lower === "rock" & computerSelection === "paper"){
         return "You Lose! Paper beats Rock!"
     }
-    if (lower === "rock" & computerSelection === "scissors"){
+    else if (lower === "rock" & computerSelection === "scissors"){
         return "You win! Good Job!"
     }
-    if (lower === "paper" & computerSelection === "rock"){  
+    else if (lower === "paper" & computerSelection === "rock"){  
         return "You win! Good Job!";
     }
-    if (lower === "paper" & computerSelection === "scissors"){
+    else if (lower === "paper" & computerSelection === "scissors"){
         return "You lose! Scissors beats Paper!";
     }
-    if (lower === "scissors" & computerSelection === "rock"){
+    else if (lower === "scissors" & computerSelection === "rock"){
         return "You lose! Rock beats Scissors!";
     }
-    if (lower === "scissors" & computerSelection === "paper"){
+    else if (lower === "scissors" & computerSelection === "paper"){
         return "You win! Good Job!";
     }
-    if (lower ===  computerSelection){
+    else {
         return "It's a tie!";
     } 
 
@@ -49,7 +51,7 @@ function game(){
         if (play_round == "You win! Good Job!"){
             score++; 
         }
-        if (play_round == "It's a tie!"){
+        else if (play_round == "It's a tie!"){
             i--;
         }
     }

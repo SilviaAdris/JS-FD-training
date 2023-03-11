@@ -38,7 +38,6 @@ function playRound(playerSelection, computerSelection){
     else {
         return "It's a tie!";
     } 
-
 }
 
 function game(){
@@ -60,6 +59,4 @@ function game(){
     }
     return "Loser!"
 }
-
-
 document.write(game());

@@ -22,11 +22,46 @@ body, html{
 header{
     width: 100vw;
 	height: 100vh;
+    display: flex;
     background-image: url(images/game.jpg);
     background-size: cover;
-    display: flex;
-	align-items: center;
+    align-items: center;
 	justify-content: center;
+}
+
+section{
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/game.jpg);
+    background-size: cover;
+    width: 100vw;
+	height: 100vh;
+}
+
+.score{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    top: 70px;
+    font-family: Roboto-bold;
+}
+
+.p-count,.c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.move{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Roboto-bold;
+}
+
+.movesleft{
+    text-align: center;
+    font-family: Roboto-regular;
 }
 
 .button{
@@ -35,6 +70,8 @@ header{
 }
 
 .play{
+    justify-content: center;
+    align-items: center;
 	border-radius: 15px;
 	background: #cff359;
 	color: rgb(71, 71, 148);
@@ -42,22 +79,72 @@ header{
     font-family: Roboto-bold;
 }
 
-.label{
-    font-family: Roboto-regular;
-    color:black;
-    font-size: 18px;
+.choices{
+    display: flex;
+    height:10%;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 40px;
+}
+.choice-button{
+    width: 70px;
+    height: 30px; 
+    background-color: #cff359;
+    color: rgb(71, 71, 148);
+    padding: 5px 10px;
+    font-family: Roboto-bold;
+    border-radius: 25px;
 }
 
-.input{
-    border-radius: 10px;
-    padding: 6px 20px;
-    border-color: 1 px solid black;
+.title{
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+    height: 10%;
+    font-family: Roboto-bold;
+
 }
 
-.submit{
-    font-family: Roboto-regular;
-    font-size: 15px; 
-    padding: 4px 10px;
-    border-radius: 15px;
-    border-color: white;
+.title h1{
+    align-items: center;
+    justify-content: center;
+}
+
+.end-game{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reload {
+    display: none;
+    width: 70px;
+    height: 30px; 
+    background-color: #cff359;
+    color: rgb(71, 71, 148);
+    padding: 5px 10px;
+    font-family: Roboto-bold;
+    border-radius: 25px;
+    justify-content: center;
+}
+  
+.result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+@media screen and (max-width: 612px)
+{  
+    .title{
+        text-align: center;
+    }
+    .score{
+        top: 200px;
+        width: 100vw;
+    }
+    .choices{
+        width: 100vw;
+    }
 }

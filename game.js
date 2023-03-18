@@ -15,7 +15,6 @@ const game = () => {
             const playerScoreBoard = document.querySelector('.p-count');
             const computerScoreBoard = document.querySelector('.c-count');
             player = player.toLowerCase();
-            computer = computer.toLowerCase();
             if(player === computer){
                 result.textContent = 'Tie';
             }

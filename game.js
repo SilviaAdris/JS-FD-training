@@ -1,5 +1,5 @@
 const game = () => {
-    let playerScore = 0;
+        let playerScore = 0;
 	let computerScore = 0;
 	let moves = 0;
 
@@ -65,12 +65,11 @@ const game = () => {
                 gameOver(playerOptions,movesLeft);
             }
     }
-	for (var i = 0 ; i < playerOptions.length; i++) {
+    for (var i = 0 ; i < playerOptions.length; i++) {
 			playerOptions[i].addEventListener('click', playingGame, false);
         }
     }
-	const gameOver = (playerOptions,movesLeft) => {
-        const endGame = document.querySelector('.end-game');
+    const gameOver = (playerOptions,movesLeft) => {
 		const chooseMove = document.querySelector('.move');
 		const result = document.querySelector('.result');
 		const reloadBtn = document.querySelector('.reload');
@@ -81,31 +80,31 @@ const game = () => {
 		chooseMove.innerText = 'Game Over!!';
 		movesLeft.style.display = 'none';
 		if(playerScore > computerScore){
-            result.style['justify-content'] = 'center';
+                        result.style['justify-content'] = 'center';
 			result.style.fontSize = '2rem';
 			result.innerText = 'You Won The Game.';
 			result.style.color = 'black';
-            reloadBtn.innerText = 'Restart';
-		    reloadBtn.style.display = 'flex';
-            reloadBtn.style['justify-content'] = 'center';
+                        reloadBtn.innerText = 'Restart';
+		        reloadBtn.style.display = 'flex';
+                        reloadBtn.style['justify-content'] = 'center';
 		}
 		else if(playerScore < computerScore){
-            result.style['justify-content'] = 'center';
+                        result.style['justify-content'] = 'center';
 			result.style.fontSize = '2rem';
 			result.innerText = 'You Lost The Game.';
 			result.style.color = 'black';
-            reloadBtn.innerText = 'Restart';
-		    reloadBtn.style.display = 'flex';
-            reloadBtn.style['justify-content'] = 'center';
+                        reloadBtn.innerText = 'Restart';
+		        reloadBtn.style.display = 'flex';
+                        reloadBtn.style['justify-content'] = 'center';
 		}
 		else{
-            result.style['justify-content'] = 'center';
+                        result.style['justify-content'] = 'center';
 			result.style.fontSize = '2rem';
 			result.innerText = 'Tie';
 			result.style.color = 'black';
-            reloadBtn.innerText = 'Restart';
-		    reloadBtn.style.display = 'flex';
-            reloadBtn.style['justify-content'] = 'center';
+                        reloadBtn.innerText = 'Restart';
+		        reloadBtn.style.display = 'flex';
+                        reloadBtn.style['justify-content'] = 'center';
 		}
 		reloadBtn.addEventListener('click',() => {
 		window.location.reload();
